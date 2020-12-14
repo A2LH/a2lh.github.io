@@ -1,0 +1,561 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+@font-face {
+    font-family: "RT Raleway";
+    src: url("../fonts/RTRaleway-Regular") format("ttf"),
+}
+
+/*****************************/
+/* PROJET POUR LES PARTIELS */
+/***************************/
+
+body {
+    background-color: #E6E6E6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/***********/
+/* Header */
+/*********/
+
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 99;
+    height: 5rem;
+    width: 100%;
+}
+
+.scrolled {
+    background-color: #000000;
+    transition: background-color 400ms linear;
+}
+
+/* Logo */
+#logo {
+    font-family: 'RT Raleway', 'Raleway', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    margin: 0 7rem 0 0;
+}
+
+.menu a {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #C7B350;
+}
+
+/**************************/
+/* Section: Presentation */
+/************************/
+
+/*******************/
+/* Section: Video */
+/*****************/
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper {
+    height: 95vh;
+}
+
+.video-overlay    { 
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(2, 1, 1, 0) 80%, #000000 100%);
+    height: 95vh; 
+    width: 100%; 
+    position: absolute; 
+    z-index: 2; 
+}
+
+/***********/
+/* Section: Page title */
+/*********/
+#page-title {
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 5rem 7rem 5rem 7rem;
+}
+
+#page-title h2 {
+    font-family: 'RT Raleway', 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    font-size: 1.5rem;
+}
+
+#page-title label {
+    display: none;
+}
+
+/*******************/
+/* Section: Realisations */
+/*****************/
+#realisations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+
+#realisations h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-size: 1.5rem;
+}
+
+#realisations a {
+    text-decoration: none;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #00000025;
+    height: 100%;
+    width: 100%;
+}
+
+article.herz {
+    background: no-repeat url("../img/herzeele_04.jpg");
+    background-size: cover;
+}
+
+article.moto {
+    background: no-repeat url("../img/moto_03.jpg");
+    background-size: cover;
+}
+
+article.music {
+    background: no-repeat url("../img/metal_unsplash_01.jpg");
+    background-size: cover;
+}
+
+article.pc {
+    background: no-repeat url("../img/pc_unsplash_01.jpg");
+    background-size: cover;
+}
+
+article.movie {
+    background: no-repeat url("../img/movie_unsplash_01.jpg");
+    background-size: cover;
+}
+
+article.creative {
+    background: no-repeat url("../img/creative_unsplash_01.jpg");
+    background-size: cover;
+}
+
+article:hover {
+    color: #fff;
+}
+
+/********************/
+/* Section: Skills */
+/******************/
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+#skills h2 {
+    font-family: 'RT Raleway', 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#skills a {
+    color: #fff;
+}
+
+/***********/
+/* Section: Contact */
+/*********/
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: 2rem 0 0 0;
+}
+
+#contact h2 {
+    font-family: 'RT Raleway', 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+#contact label {
+    display: none;
+}
+
+/***********/
+/* Footer CC */
+/*********/
+.fixed-cc {
+    position: fixed;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 98;
+    mix-blend-mode: difference;
+}
+
+/***********/
+/* Colors */
+/*********/
+.white {
+    background-color: #E6E6E6;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.black-transparent {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.txt-black {
+    color: #000000;
+}
+
+/**********/
+/* Table */
+/********/
+
+table {
+    text-transform: uppercase;
+}
+
+table,
+table tr {
+    border: 1px solid #fff;
+}
+
+table td,
+table th {
+    padding: 3rem;
+}
+
+table th {
+    font-weight: 600;
+}
+
+/********************/
+/* Buttons & Forms */
+/******************/
+.button {
+    background-color: transparent;
+    border-style: none;
+    font-family: 'RT Raleway', 'Raleway', sans-serif;
+}
+
+.button:hover {
+    background-color: #875DA2;
+    color: #fff;
+}
+
+/* Form */
+.form-ctrl {
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 3px solid #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+}
+
+input[type="text"]:focus, [type="email"]:focus {
+    border-bottom: #875DA2 3px solid;
+}
+
+textarea:focus {
+    border-bottom: #875DA2 3px solid;
+}
+
+/******************/
+/* Media queries */
+/****************/
+
+/* Way Smaller */
+@media (min-width: 320px) {
+
+    /* Header */
+    #logo {
+        margin: 0 0 0 2rem;
+        font-size: 1.25rem;
+    }
+
+    .hamburger {
+        margin: 0 2rem 0 0;
+    }  
+
+    .open,
+    .close {
+        margin: 1.5rem 2.3rem 0 0;
+        font-size: 1.25rem;
+    }   
+
+    /* Infos */
+    article {
+        color: #fff;
+        height: 13rem;
+        width: 23rem;
+        margin: 0.1rem;
+    }
+
+    #infos h2 {
+        font-size: 1.25rem;
+    }
+
+    /* Footer Fixed CC */
+    .fixed-cc {
+        margin: 0 0 1.25rem 2rem;
+    }
+
+    .fixed-cc p {
+        font-size: 1rem;
+        font-family: 'RT Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 0 2rem 5rem 2rem;
+    }
+
+    #contact h2 {
+        font-size: 1.25rem;
+        padding: 0 0 2.5rem 0;
+    }
+
+    /* Skills */
+    #skills {
+        padding: 5rem 3rem 5rem 3rem;
+        font-size: 1.25rem;
+    }
+    
+    #skills h2 {
+        padding: 0 0 2rem 0;
+    }
+    
+    #skills a {
+        padding: 0 0 3rem 0;
+    }    
+
+    /* Button */
+    .button {
+        font-size: 1.25rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    /* Form */
+    .form-ctrl {
+        width: 10rem;
+        border-bottom: 1.5px solid #fff;
+        font-size: 1.25rem;
+        padding: 1rem;
+        margin: 0 0 2rem 0;
+        font-weight: 300;
+    }   
+
+}
+
+/* Extra Small */
+@media (min-width: 540px) {
+
+    /* Infos */
+    article {
+        height: 13rem;
+        width: 33rem;
+    }
+}
+
+/* Small */
+@media (min-width: 640px) {
+
+    /* Infos */
+    article {
+        height: 18rem;
+        width: 38rem;
+        margin: 0.1rem;
+    }
+
+    .form-ctrl {
+        width: 20rem;
+        border-bottom: 3px solid #fff;
+    }       
+}
+
+/* Medium */
+@media (min-width: 768px) {
+
+    /* Header */
+    #logo {
+        margin: 0 0 0 5rem;
+    }
+
+    .hamburger {
+        margin: 0 5rem 0 0;
+    }  
+
+    /* Infos */
+    article {
+        height: 19rem;
+        width: 39rem;
+        margin: 0 0 0.1rem 0;
+    }
+
+    .open, .close {
+        font-size: 2rem;
+    }   
+
+    /* Skills */
+    #skills {
+        padding: 10rem;
+    }
+    
+    #skills h2 {
+        padding: 0 0 2rem 0;
+    }
+    
+    #skills a {
+        padding: 0 0 5rem 0;
+    }
+
+    /* Form */
+    .form-ctrl {
+        padding: 1rem;
+        margin: 0 0 2rem 0;
+    }       
+}
+
+/* Large */
+@media (min-width: 1024px) {
+
+    /* Infos */
+    article {
+        height: 19rem;
+        width: 31rem;
+        margin: 0 0 0.1rem 0;
+    }
+
+    #infos h2 {
+        font-size: 1.5rem;
+    }
+
+    .open, .close {
+        font-size: 2rem;
+    }
+
+    /* Skills */
+    #skills {
+        font-size: 1.5rem;
+    }
+
+    /* Contact */
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Button */
+    /* .button {
+        font-size: 1.5rem;
+    }*/
+
+    /* Form */
+    /*.form-ctrl {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }*/
+}
+
+/* XL */
+@media (min-width: 1280px) { 
+
+    /* Header */
+    #logo {
+        margin: 0 0 0 7rem;
+    }
+
+    .hamburger {
+        margin: 0 7rem 0 0;
+    }  
+
+    .open,
+    .close {
+        margin: 1.5rem 7rem 0 0;
+        font-size: 2.5rem;
+    }   
+
+    /* Infos */
+    article {
+        height: 19rem;
+        width: 31rem;
+        margin: 0 0 0.1rem 0;
+    }
+
+    /* CC */
+    .fixed-cc {
+        margin: 0 0 2rem 7rem;
+    }
+
+    /* Footer */
+    #contact h2 {
+        padding: 0 0 3rem 0;
+    }  
+}
+
+/* XXL */
+@media (min-width: 1600px) { 
+
+    /* Infos */
+    article {
+        height: 30rem;
+        width: 105rem;
+        margin: 0 0 0.5rem 0;
+    }
+}
