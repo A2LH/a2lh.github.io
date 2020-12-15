@@ -3,7 +3,7 @@ $(window).scroll(function(){
 });
 
 // Vidéo Youtube - https://jsfiddle.net/350D/uq1vvavf/ /// 4_8sgIrXp9c - 1gXe1ICk8PY - sRE5iQCdRvE
-var vid = "ElzQVqey2RU",
+var vid = "6FJxH0VKZZc",
     streams,
     video_tag = document.getElementById("video");
 
@@ -83,3 +83,5 @@ function parse_str(str) {
         return params;
     }, {});
 }
+
+new CircleType(document.getElementById('roundjs1'));

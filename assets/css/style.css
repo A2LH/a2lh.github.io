@@ -8,12 +8,14 @@
     src: url("../fonts/RTRaleway-Regular") format("ttf"),
 }
 
-/*****************************/
-/* PROJET POUR LES PARTIELS */
-/***************************/
+/*********************************************/
+/********* PROJET POUR LES PARTIELS *********/
+/******** A RENDRE POUR LE 18/12/20 *******/
+/* Alexis B. - Léa L. - Léa D. - Hugo B. */
+/****************************************/
 
 body {
-    background-color: #E6E6E6;
+    background-color: #EDECEC;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -28,7 +30,7 @@ body {
     justify-content:space-between;
     position: fixed;
     z-index: 99;
-    height: 5rem;
+    height: 4rem;
     width: 100%;
 }
 
@@ -80,8 +82,7 @@ video {
 }
 
 .video-overlay    { 
-    background-color: transparent;
-    background-image: linear-gradient(180deg, rgba(2, 1, 1, 0) 80%, #000000 100%);
+    background-color: #0009;
     height: 95vh; 
     width: 100%; 
     position: absolute; 
@@ -93,21 +94,34 @@ video {
 /*********/
 #page-title {
     display: flex;
-    height: auto;
-    width: auto;
-    margin: 5rem 7rem 5rem 7rem;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
 }
 
 #page-title h2 {
+    color: #1F1F1F;
     font-family: 'RT Raleway', 'Raleway', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-
-    font-size: 1.5rem;
 }
 
-#page-title label {
-    display: none;
+/***********/
+/* Section: Page title */
+/*********/
+#page-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+#page-bottom a {
+    color: #1F1F1F;
+    font-family: 'RT Raleway', 'Raleway', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#page-bottom a:hover {
+    color: #C7B350;
 }
 
 /*******************/
@@ -122,21 +136,20 @@ video {
 }
 
 #realisations h2 {
+    color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-
-    font-size: 1.5rem;
 }
 
 #realisations a {
     text-decoration: none;
 }
 
-article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.article-content {
+    position: absolute;
+    padding: 2.5rem;
+    pointer-events: none;
 }
 
 .article-overlay {
@@ -147,6 +160,11 @@ article {
     background-color: #00000025;
     height: 100%;
     width: 100%;
+}
+
+.article-overlay:hover {
+    background-color: #C7B350;
+    transition: background-color 400ms linear;
 }
 
 article.herz {
@@ -169,40 +187,6 @@ article.pc {
     background-size: cover;
 }
 
-article.movie {
-    background: no-repeat url("../img/movie_unsplash_01.jpg");
-    background-size: cover;
-}
-
-article.creative {
-    background: no-repeat url("../img/creative_unsplash_01.jpg");
-    background-size: cover;
-}
-
-article:hover {
-    color: #fff;
-}
-
-/********************/
-/* Section: Skills */
-/******************/
-#skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-}
-
-#skills h2 {
-    font-family: 'RT Raleway', 'Raleway', sans-serif;
-    font-weight: bold;
-}
-
-#skills a {
-    color: #fff;
-}
-
 /***********/
 /* Section: Contact */
 /*********/
@@ -210,38 +194,18 @@ article:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
-    height: auto;
-    width: auto;
-    margin: 2rem 0 0 0;
-}
-
-#contact h2 {
-    font-family: 'RT Raleway', 'Raleway', sans-serif;
-    font-weight: 300;
-}
-
-#contact label {
-    display: none;
-}
-
-/***********/
-/* Footer CC */
-/*********/
-.fixed-cc {
-    position: fixed;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 98;
-    mix-blend-mode: difference;
 }
 
 /***********/
 /* Colors */
 /*********/
-.white {
+.offwhite {
     background-color: #E6E6E6;
+}
+
+.white {
+    background-color: #ffffff;
 }
 
 .black {
@@ -257,29 +221,7 @@ article:hover {
 }
 
 .txt-black {
-    color: #000000;
-}
-
-/**********/
-/* Table */
-/********/
-
-table {
-    text-transform: uppercase;
-}
-
-table,
-table tr {
-    border: 1px solid #fff;
-}
-
-table td,
-table th {
-    padding: 3rem;
-}
-
-table th {
-    font-weight: 600;
+    color: #1F1F1F;
 }
 
 /********************/
@@ -329,62 +271,16 @@ textarea:focus {
         font-size: 1.25rem;
     }
 
-    .hamburger {
-        margin: 0 2rem 0 0;
-    }  
-
-    .open,
-    .close {
-        margin: 1.5rem 2.3rem 0 0;
-        font-size: 1.25rem;
-    }   
-
-    /* Infos */
+    /* Realisations */
     article {
-        color: #fff;
         height: 13rem;
         width: 23rem;
         margin: 0.1rem;
     }
 
-    #infos h2 {
+    #realisations h2 {
         font-size: 1.25rem;
     }
-
-    /* Footer Fixed CC */
-    .fixed-cc {
-        margin: 0 0 1.25rem 2rem;
-    }
-
-    .fixed-cc p {
-        font-size: 1rem;
-        font-family: 'RT Raleway', sans-serif;
-        font-weight: 600;
-    }
-
-    /* Contact */
-    #contact {
-        padding: 0 2rem 5rem 2rem;
-    }
-
-    #contact h2 {
-        font-size: 1.25rem;
-        padding: 0 0 2.5rem 0;
-    }
-
-    /* Skills */
-    #skills {
-        padding: 5rem 3rem 5rem 3rem;
-        font-size: 1.25rem;
-    }
-    
-    #skills h2 {
-        padding: 0 0 2rem 0;
-    }
-    
-    #skills a {
-        padding: 0 0 3rem 0;
-    }    
 
     /* Button */
     .button {
@@ -407,7 +303,7 @@ textarea:focus {
 /* Extra Small */
 @media (min-width: 540px) {
 
-    /* Infos */
+    /* Realisations */
     article {
         height: 13rem;
         width: 33rem;
@@ -417,7 +313,7 @@ textarea:focus {
 /* Small */
 @media (min-width: 640px) {
 
-    /* Infos */
+    /* Realisations */
     article {
         height: 18rem;
         width: 38rem;
@@ -438,32 +334,11 @@ textarea:focus {
         margin: 0 0 0 5rem;
     }
 
-    .hamburger {
-        margin: 0 5rem 0 0;
-    }  
-
-    /* Infos */
+    /* Realisations */
     article {
         height: 19rem;
         width: 39rem;
         margin: 0 0 0.1rem 0;
-    }
-
-    .open, .close {
-        font-size: 2rem;
-    }   
-
-    /* Skills */
-    #skills {
-        padding: 10rem;
-    }
-    
-    #skills h2 {
-        padding: 0 0 2rem 0;
-    }
-    
-    #skills a {
-        padding: 0 0 5rem 0;
     }
 
     /* Form */
@@ -476,41 +351,12 @@ textarea:focus {
 /* Large */
 @media (min-width: 1024px) {
 
-    /* Infos */
+    /* Realisations */
     article {
         height: 19rem;
         width: 31rem;
         margin: 0 0 0.1rem 0;
     }
-
-    #infos h2 {
-        font-size: 1.5rem;
-    }
-
-    .open, .close {
-        font-size: 2rem;
-    }
-
-    /* Skills */
-    #skills {
-        font-size: 1.5rem;
-    }
-
-    /* Contact */
-    #contact h2 {
-        font-size: 1.5rem;
-    }
-
-    /* Button */
-    /* .button {
-        font-size: 1.5rem;
-    }*/
-
-    /* Form */
-    /*.form-ctrl {
-        font-size: 1.5rem;
-        font-weight: 300;
-    }*/
 }
 
 /* XL */
@@ -521,41 +367,47 @@ textarea:focus {
         margin: 0 0 0 7rem;
     }
 
-    .hamburger {
-        margin: 0 7rem 0 0;
-    }  
-
-    .open,
-    .close {
-        margin: 1.5rem 7rem 0 0;
-        font-size: 2.5rem;
-    }   
-
     /* Infos */
     article {
         height: 19rem;
         width: 31rem;
         margin: 0 0 0.1rem 0;
     }
-
-    /* CC */
-    .fixed-cc {
-        margin: 0 0 2rem 7rem;
-    }
-
-    /* Footer */
-    #contact h2 {
-        padding: 0 0 3rem 0;
-    }  
 }
 
 /* XXL */
 @media (min-width: 1600px) { 
 
-    /* Infos */
+    /* Page title */
+    #page-title h2 {
+        font-size: 2rem;
+    }
+
+    /* Realisations */
+    #page-bottom a {
+        font-size: 1.5rem;
+    }
+
+    #page-bottom {
+        margin: 5rem 0 10rem 0;
+    }
+
     article {
         height: 30rem;
         width: 105rem;
         margin: 0 0 0.5rem 0;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 5rem 0 5rem 0;
+    }
+
+    #contact .cleft {
+        padding: 0 10rem 0 0;
+    }
+    
+    #contact .cright {
+        padding: 0 0 0 10rem;
     }
 }
